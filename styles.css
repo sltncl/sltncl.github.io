@@ -452,6 +452,7 @@ footer {
 
     .header img {
         max-width: 50%; 
+        height: auto;
         margin-top: 1rem;
         align-items: center;
     }
