@@ -207,7 +207,7 @@ body {
     padding: 1.5rem;
     color: #333;
     font-size: 1.1rem;
-    background-color: #f9f9f9;
+    background-color: #f8f8f8;
     border-radius: 12px;
     width: 100%;
     max-width: 90%;
@@ -235,7 +235,7 @@ body {
 .skill-grid span {
     display: flex;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: #f8f8f8;
     padding: 0.6rem 0.9rem;
     border-radius: 5px;
     font-weight: 500;
@@ -247,7 +247,7 @@ body {
 
 /* Sezione Progetti */
 .progetti-section {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     padding: 3rem 6rem;
     text-align: center;
 }
