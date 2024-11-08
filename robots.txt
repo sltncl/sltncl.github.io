@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sltncl.github.io/sitemap.xml
