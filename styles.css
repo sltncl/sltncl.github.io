@@ -386,7 +386,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #ffffff;
@@ -404,6 +404,23 @@ body {
     color: #666;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+}
+
+.curriculum-buttons {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.curriculum-buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 /* Sezione footer */
