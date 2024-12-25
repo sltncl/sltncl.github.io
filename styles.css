@@ -440,12 +440,13 @@ footer {
     .navbar-links {
         display: none; 
         flex-direction: column;
+        text-align: center;
         gap: 1rem;
         position: absolute;
         top: 60px;
         right: 20px;
         background-color: #f8f8f8;
-        padding: 1rem;
+        padding: 2rem;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         z-index: 1001;
