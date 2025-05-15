@@ -5,6 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    max-width: 100%;
 }
 
 /* Sezione navbar */
@@ -430,7 +431,7 @@ footer {
     padding: 1rem;
     color: #666;
     font-size: 0.9rem;
-    width: 100%;
+    max-width: 100%;
 }
 
 /* Responsive adjustments */
