@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Dati strutturati JSON-LD -->
     <script type="application/ld+json">
         {
@@ -211,9 +214,22 @@
     document.addEventListener("DOMContentLoaded", function() {
         const hamburger = document.querySelector(".hamburger");
         const navbarLinks = document.querySelector(".navbar-links");
+        const links = document.querySelectorAll(".navbar-links a");
 
         hamburger.addEventListener("click", function() {
             navbarLinks.classList.toggle("show");
+        });
+
+        links.forEach(link => {
+            link.addEventListener("click", () => {
+                navbarLinks.classList.remove("show");
+            });
+        });
+
+        document.addEventListener("click", function(e) {
+            if (navbarLinks.classList.contains("show") && !navbarLinks.contains(e.target) && !hamburger.contains(e.target)) {
+                navbarLinks.classList.remove("show");
+            }
         });
     });
 </script>
