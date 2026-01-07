@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicola Saltarelli | Ingegnere dell'Automazione</title>
-    <meta name="description" content="Portfolio di Nicola Saltarelli, Ingegnere dell'Automazione specializzato in Robotica. Scopri le mie esperienze e il percorso che mi ha portato nel campo della tecnologia.">   
-    <meta name="keywords" content="Nicola Saltarelli, nicola saltarelli ingegnere,ingegnere automazione, robotica, saltarelli, saltarelli nicola, Nicola Saltarelli Ingegnere dell'automazione, Nicola Saltarelli automazione">
+    
+    <title>Nicola Saltarelli | Robotics & AI Engineer</title>
+    
+    <meta name="description" content="Portfolio of Nicola Saltarelli, Robotics & AI Engineer based in Italy.">
+    
+    <meta name="keywords" content="Nicola Saltarelli, Robotics Engineer, AI Engineer, Automation Engineer, ROS2, Reinforcement Learning, Computer Vision, Deep Learning, Politecnico di Bari, Autonomous Navigation, SLAM, VHDL, Python, C++">
+    
+    <meta property="og:title" content="Nicola Saltarelli | Robotics & AI Engineer">
+    <meta property="og:description" content="Specialized in integrating Classical Control with Modern AI. Discover my projects in ROS2 and Computer Vision.">
+    <meta property="og:url" content="https://sltncl.github.io/">
+    <meta property="og:type" content="website">
+
     <link rel="canonical" href="https://sltncl.github.io/">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Dati strutturati JSON-LD -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Person",
             "name": "Nicola Saltarelli",
             "alternateName": [
-                "Nicola Saltarelli Ingegnere",
-                "Nicola Saltarelli Automazione",
-                "Nicola Saltarelli Ingegnere dell'Automazione",
-                "Nicola Saltarelli"
+                "Nicola Saltarelli Engineer",
+                "Nicola Saltarelli Robotics",
+                "Nicola Saltarelli AI"
             ],
-            "description": "Sito di Nicola Saltarelli, ingegnere dell'automazione.",
-            "jobTitle": "Ingegnere dell'Automazione",
+            "description": "Portfolio of Nicola Saltarelli, Robotics & AI Engineer.",
+            "jobTitle": "Robotics & AI Engineer",
             "alumniOf": {
                 "@type": "EducationalOrganization",
                 "name": "Politecnico di Bari"
             },
+            "knowsAbout": ["Robotics", "Artificial Intelligence", "ROS2", "Computer Vision", "Control Systems"],
             "sameAs": [
                 "https://it.linkedin.com/in/nicola-saltarelli-194a34235",
                 "https://github.com/sltncl"
@@ -40,196 +51,305 @@
     </script>
 </head>
 <body>
-    <!-- Navbar -->
+
     <nav class="navbar">
-        <div class="navbar-brand"><a href="index.html">NS</a></div>
-        <ul class="navbar-links">
-            <li><a href="#formazione">Formazione</a></li>
-            <li><a href="#competenze">Competenze</a></li>
-            <li><a href="#progetti">Progetti</a></li>
-            <li><a href="chi-sono.html">Chi sono</a></li>
-            <li><a href="#contatti">Contatti</a></li>
-        </ul>
-        <div class="hamburger">
-            <i class="fas fa-bars"></i>
+        <div class="nav-content">
+            <div class="brand-container">
+                <div class="navbar-brand"><a href="#">NS</a></div>
+            </div>
+
+            <ul class="navbar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li> 
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="header">
-        <div class="header-text">
-            <h1>Nicola Saltarelli</h1>
-            <p>Ingegnere dell'Automazione</p>
-            <div class="header-buttons">
-                <a href="#formazione" class="btn btn-primary">Inizia da qui</a>
-                <a href="chi-sono.html" class="btn btn-secondary">Chi sono</a>
-            </div>
-        </div>
-        <img src="./medias/header.png" alt="Foto profilo di Nicola Saltarelli, Ingegnere dell'Automazione">
-    </header>
-
-    <!-- Main content -->
     <main>
-        <!-- Formazione -->
-        <section id="formazione" class="formazione-section">
-            <h2>Formazione</h2>
-            <div class="formazione-content">
-                <div class="formazione-item">
-                    <h3>Politecnico di Bari</h3>
-                    <p>Laurea Magistrale in Ingegneria dell'Automazione</p>
-                    <p>Votazione : 110/110 cum laude</p>
-                </div>
-                <div class="formazione-item">
-                    <h3>Politecnico di Bari</h3>
-                    <p>Laurea Triennale in Ingegneria Informatica e dell'Automazione</p>
-                    <p>Votazione : 110/110 cum laude</p>
-                </div>
-                <div class="formazione-item">
-                    <h3>I.T.E.T. Blaise Pascal</h3>
-                    <p>Diploma di maturità in amministrazione finanza e marketing</p>
-                    <p>Votazione : 100/100</p>
+        <header class="hero-section">
+            <h1>Nicola Saltarelli</h1>
+            <p class="subtitle">Robotics &amp; AI Engineer</p>
+            
+            <div class="hero-links">
+                <a href="https://github.com/sltncl" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://it.linkedin.com/in/nicola-saltarelli-194a34235" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:nicolasaltarelli@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </header>
+
+        <hr class="divider">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="text-block">
+                <p>
+                    I am a <strong>Robotics & AI Engineer</strong> with a strong academic foundation in <strong>Automation Engineering</strong> (M.Sc. with Honors). 
+                    My expertise lies at the intersection of classical control theory and modern artificial intelligence <strong>applied to robotics</strong>.
+                </p>
+                <p>
+                    Currently working as a Graduate Researcher, I specialize in <strong>Autonomous Systems</strong>, focusing on Reinforcement Learning, Computer Vision, and ROS2 frameworks. 
+                    I am driven by the challenge of building robust robotic systems that can perceive, learn, and act in dynamic environments.
+                </p>
+                
+                <div class="cv-buttons">
+                    <a href="curriculum/CV_Nicola_Saltarelli_Inglese.pdf" class="btn-outline" download>Download CV (English)</a>
+                    <a href="curriculum/CV_Nicola_Saltarelli_Italiano.pdf" class="btn-outline" download>Download CV (Italian)</a>
                 </div>
             </div>
         </section>
 
-        <!-- Competenze -->
-        <section id="competenze" class="competenze-section">
-            <h2>Competenze</h2>
-            <div class="competenze-content">
-                <div class="competenze-item">
-                    <h3><i class="fas fa-code"></i> Programmazione</h3>
-                    <div class="skill-grid">
-                        <span><i class="fab fa-python"></i> Python</span>
-                        <span><i class="fab fa-js"></i> JavaScript</span>
-                        <span><i class="fas fa-cogs"></i> C++</span>
-                        <span><i class="fab fa-html5"></i> HTML</span>
-                        <span><i class="fab fa-css3-alt"></i> CSS</span>
-                        <span><i class="fab fa-node"></i> NodeJS</span>
-                        <span><i class="fab fa-react"></i> ReactJS</span>
-                        <span><i class="fas fa-microchip"></i> VHDL</span>
-                        <span><i class="fab fa-java"></i> Java</span>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="list-container">
+                <div class="list-item">
+                    <div class="list-info">
+                        <h3>Politecnico di Bari</h3>
+                        <p class="role">M.Sc. in Automation Engineering</p>
+                    </div>
+                    <div class="list-meta">
+                        <span class="grade">110/110 cum laude</span>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-info">
+                        <h3>Politecnico di Bari</h3>
+                        <p class="role">B.Sc. in Computer and Automation Engineering</p>
+                    </div>
+                    <div class="list-meta">
+                        <span class="grade">110/110 cum laude</span>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-info">
+                        <h3>I.T.E.T. Blaise Pascal</h3>
+                        <p class="role">High School Diploma (Administration & Marketing)</p>
+                    </div>
+                    <div class="list-meta">
+                        <span class="grade">100/100</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="list-container">
+                
+                <div class="list-item experience-item">
+                    <div class="list-info">
+                        <h3>Graduate Researcher</h3>
+                        <p class="role">Politecnico di Bari</p>
+                        <p class="description">
+                            Conducting R&D activities focused on producing scientific papers in the fields of Robotics, Artificial Intelligence, and Computer Vision.
+                        </p>
+                    </div>
+                    <div class="list-meta">
+                        <span class="date">Nov 2025 - Present</span>
                     </div>
                 </div>
 
-                <div class="competenze-item">
-                    <h3><i class="fas fa-robot"></i> Automazione</h3>
-                    <div class="skill-grid">
-                        <span><i class="fas fa-chart-line"></i> Matlab</span>
-                        <span><i class="fas fa-sitemap"></i> Simulink</span>
-                        <span><i class="fas fa-cube"></i> Solidworks</span>
-                        <span><i class="fas fa-vial"></i> LabView</span>
-                        <span><i class="fas fa-microchip"></i> Fritzing</span>
-                        <span><i class="fas fa-project-diagram"></i> NI Multisim</span>
-                        <span><i class="fab fa-docker"></i> Docker</span>
-                        <span><i class="fas fa-robot"></i> ROS</span>
+                <div class="list-item experience-item">
+                    <div class="list-info">
+                        <h3>MSc Research Intern (Master Thesis)</h3>
+                        <p class="role">Politecnico di Bari</p>
+                        <p class="description">
+                            <strong>Thesis:</strong> "Online Reinforcement Learning for Adaptive Gain Tuning in Image-Based Visual Servoing".
+                        </p>
+                        <ul class="job-details">
+                            <li>Designed a high-fidelity ROS 2 (Jazzy) / Gazebo environment for a UR5e manipulator.</li>
+                            <li>Implemented real-time Cartesian velocity control using MoveIt Servo.</li>
+                            <li>Developed a Continuous Action Q-Learning (CAQL) algorithm for adaptive IBVS.</li>
+                            <li>Integrated YOLO and AprilTag (OpenCV) for robust tracking in dynamic environments.</li>
+                        </ul>
+                    </div>
+                    <div class="list-meta">
+                        <span class="date">Jun 2025 - Oct 2025</span>
                     </div>
                 </div>
 
-                <div class="competenze-item">
-                    <h3><i class="fas fa-language"></i> Lingue</h3>
-                    <div class="skill-grid">
-                        <span><i class="fas fa-flag"></i> Italiano (Madrelingua)</span>
-                        <span><i class="fas fa-flag"></i> Inglese (Intermedio B2)</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Selected Projects</h2>
+            <div class="projects-list">
+                
+                <a href="https://github.com/sltncl/Online_Reinforcement_Learning_for_Adaptive_Gain_Tuning_in_IBVS" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>Online RL for Adaptive Gain Tuning in IBVS</h3>
+                        <p>Adaptive IBVS controller for UR5e manipulator based on Reinforcement Learning.</p>
                     </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+                <a href="https://github.com/sltncl/turtlebot3-autonomous-exploration" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>Turtlebot3 Autonomous Exploration</h3>
+                        <p>Autonomous exploration system implementation using TurtleBot3, ROS2, and Gazebo.</p>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+                <a href="https://github.com/sltncl/Motion-Control-with-NN" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>Motion Control with NN</h3>
+                        <p>Motion control of a 6-DOF manipulator using Neural Networks.</p>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+                <a href="https://github.com/sltncl/Snake-on-FPGA" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>Snake on FPGA DE10-Lite</h3>
+                        <p>Hardware implementation of the Snake game on FPGA using VHDL.</p>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+                <a href="https://github.com/sltncl/Position-Control-of-Linear-Actuator" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>Linear Actuator Control</h3>
+                        <p>Design and implementation of a position control system for a linear actuator.</p>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+                <a href="https://github.com/sltncl/Trajectory-Planning-for-Niryo-Ned-2" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>Trajectory Planning Niryo Ned 2</h3>
+                        <p>Trajectory planning algorithms and code for the Niryo Ned 2 robot.</p>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+                <a href="https://github.com/sltncl/JustChat" class="project-row" target="_blank">
+                    <div class="project-main">
+                        <h3>JustChat</h3>
+                        <p>Real-time messaging web application similar to WhatsApp Web.</p>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-grid">
+                    <span>Python</span> <span>C++</span> <span>Matlab</span> <span>VHDL</span> <span>Java</span> <span>JavaScript</span> <span>HTML/CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Automation &amp; Tools</h3>
+                <div class="skill-grid">
+                    <span>ROS2</span> <span>Simulink</span> <span>Solidworks</span> <span>LabView</span> <span>Docker</span> <span>NI Multisim</span> <span>Fritzing</span> <span>Git</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-grid">
+                    <span>Italian (Native)</span> <span>English (B2)</span>
                 </div>
             </div>
         </section>
 
-        <!-- Progetti -->
-        <section id="progetti" class="progetti-section">
-            <h2>Progetti</h2>
-            <div class="progetti-content">
-                <div class="progetto-item">
-                    <h3>Online RL for Adaptive Gain Tuning in IBVS</h3>
-                    <p>Implementazione di un controllore IBVS adattivo per manipolatore UR5e basato su Reinforcement Learning.</p>
-                    <a href="https://github.com/sltncl/Online_Reinforcement_Learning_for_Adaptive_Gain_Tuning_in_IBVS" class="arrow-link">&#8594;</a>
-                </div>
-                <div class="progetto-item">
-                    <h3>Turtlebot3 autonomous exploration</h3>
-                    <p>Implementazione di un sistema di esplorazione autonomo basato su TurtleBot3, ROS2 e Gazebo.</p>
-                    <a href="https://github.com/sltncl/turtlebot3-autonomous-exploration" class="arrow-link">&#8594;</a>
-                </div>
-                <div class="progetto-item">
-                    <h3>Motion Control with NN</h3>
-                    <p>Controllo del moto di un manipolatore a 6 gradi di libertà con reti neurali.</p>
-                    <a href="https://github.com/sltncl/Motion-Control-with-NN" class="arrow-link">&#8594;</a>
-                </div>
-                <div class="progetto-item">
-                    <h3>Snake on FPGA DE10-Lite</h3>
-                    <p>Implementazione del gioco Snake sulla scheda FPGA DE10-Lite usando VHDL</p>
-                    <a href="https://github.com/sltncl/Snake-on-FPGA" class="arrow-link">&#8594;</a>
-                </div>
-                <div class="progetto-item">
-                    <h3>Position control of linear actuator</h3>
-                    <p>Implementazione di un sistema di controllo della posizione di un attuatore lineare.</p>
-                    <a href="https://github.com/sltncl/Position-Control-of-Linear-Actuator" class="arrow-link">&#8594;</a>
-                </div>
-                <div class="progetto-item">
-                    <h3>Trajectory Planning for Niryo Ned 2</h3>
-                    <p>Materiale e codice per la pianificazione della traiettoria per il robot Niryo Ned 2.</p>
-                    <a href="https://github.com/sltncl/Trajectory-Planning-for-Niryo-Ned-2" class="arrow-link">&#8594;</a>           
-                </div>
-                <div class="progetto-item">
-                    <h3>JustChat</h3>
-                    <p>Progetto per un'applicazione web di messaggistica simile a WhatsApp Web.</p>
-                    <a href="https://github.com/sltncl/JustChat" class="arrow-link">&#8594;</a>
-                </div>
+        <footer id="contact" class="site-footer">
+            
+            <div class="footer-brand">
+                <span>NS</span>
             </div>
-        </section>
 
-        <!-- Sezione Contatti -->
-        <section id="contatti" class="contatti-section">
-            <h2>Contatti</h2>
-            <div class="contatti-content">
-                <div class="contatti-item">
-                    <a href="mailto:nicolasaltarelli2001@icloud.com">
-                        <i class="fas fa-envelope icon"></i> <!-- Icona email -->
-                        <h3>Email</h3>
-                    </a>
-                </div>
-                <div class="contatti-item">
-                    <a href="https://it.linkedin.com/in/nicola-saltarelli-194a34235" target="_blank">
-                        <i class="fab fa-linkedin icon"></i> <!-- Icona LinkedIn -->
-                        <h3>LinkedIn</h3>
-                    </a>
-                </div>
-                <div class="contatti-item">
-                    <a href="https://github.com/sltncl" target="_blank">
-                        <i class="fab fa-github icon"></i> <!-- Icona GitHub -->
-                        <h3>GitHub</h3>
-                    </a>
-                </div>
+            <div class="footer-socials">
+                <a href="https://github.com/sltncl" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://it.linkedin.com/in/nicola-saltarelli-194a34235" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:nicolasaltarelli@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-        </section>
+
+            <p class="copyright">&copy; 2026 Nicola Saltarelli</p>
+        </footer>
+
     </main>
-    
 
-    <footer>
-        <p>&copy; 2024 Nicola Saltarelli</p>
-    </footer>
-</body>
-</html>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // --- Elements ---
+            const hamburger = document.querySelector(".hamburger");
+            const navbarLinks = document.querySelector(".navbar-links");
+            const links = document.querySelectorAll(".navbar-links a");
+            const themeToggle = document.getElementById("theme-toggle");
+            const icon = themeToggle.querySelector("i");
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const hamburger = document.querySelector(".hamburger");
-        const navbarLinks = document.querySelector(".navbar-links");
-        const links = document.querySelectorAll(".navbar-links a");
+            // --- Mobile Menu Logic ---
+            hamburger.addEventListener("click", function(e) {
+                navbarLinks.classList.toggle("show");
+                e.stopPropagation();
+            });
 
-        hamburger.addEventListener("click", function() {
-            navbarLinks.classList.toggle("show");
-        });
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    navbarLinks.classList.remove("show");
+                });
+            });
 
-        links.forEach(link => {
-            link.addEventListener("click", () => {
-                navbarLinks.classList.remove("show");
+            document.addEventListener("click", function(e) {
+                if (navbarLinks.classList.contains("show") && 
+                    !navbarLinks.contains(e.target) && 
+                    !hamburger.contains(e.target)) {
+                    navbarLinks.classList.remove("show");
+                }
+            });
+
+            // --- Theme Logic (Dark Default) ---
+            const currentTheme = localStorage.getItem("theme");
+            
+            if (currentTheme === "light") {
+                document.body.setAttribute("data-theme", "light");
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+                themeToggle.setAttribute("aria-label", "Toggle Dark Mode");
+            }
+
+            themeToggle.addEventListener("click", function() {
+                if (document.body.getAttribute("data-theme") === "light") {
+                    document.body.removeAttribute("data-theme");
+                    localStorage.setItem("theme", "dark");
+                    icon.classList.remove("fa-moon");
+                    icon.classList.add("fa-sun");
+                    themeToggle.setAttribute("aria-label", "Toggle Light Mode");
+                } else {
+                    document.body.setAttribute("data-theme", "light");
+                    localStorage.setItem("theme", "light");
+                    icon.classList.remove("fa-sun");
+                    icon.classList.add("fa-moon");
+                    themeToggle.setAttribute("aria-label", "Toggle Dark Mode");
+                }
             });
         });
-
-        document.addEventListener("click", function(e) {
-            if (navbarLinks.classList.contains("show") && !navbarLinks.contains(e.target) && !hamburger.contains(e.target)) {
-                navbarLinks.classList.remove("show");
-            }
-        });
-    });
-</script>
+    </script>
+</body>
+</html>
